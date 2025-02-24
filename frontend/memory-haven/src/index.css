@@ -1,0 +1,293 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+/* 🎀 Import Cute Bubbly Font */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(to bottom, #ffdde1, #def3f6);
+  padding: 20px;
+  text-align: center;
+}
+
+/* 🎀 Title Styling */
+h1 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ff4081;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+h1::before { content: "💖 "; }
+h1::after { content: " ✨"; }
+
+/* 📦 Box Styling */
+.section-box {
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* Different pastel shades for each box */
+.about-box { background: #ffdde1; color: #ff4081; } /* Soft Pink */
+.how-it-works-box { background: #ffeb99; color: #ff8c00; text-align: left; max-width: 600px; margin: auto; } /* Light Yellow */
+.features-box { background: #b5e7a0; color: #2e7d32; display: flex; justify-content: space-around; flex-wrap: wrap; } /* Mint Green */
+.recent-box { background: #a0e9ff; color: #007acc; } /* Soft Blue */
+
+/* ✨ Cute Bullet Points */
+.how-it-works {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.how-it-works li {
+  font-size: 1.1rem;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+}
+
+/* Replace numbers with icons */
+.how-it-works li:nth-child(1)::before { content: "✔️ "; color: #ff4081; }
+.how-it-works li:nth-child(2)::before { content: "🎥 "; color: #ff8c00; }
+.how-it-works li:nth-child(3)::before { content: "📅 "; color: #007acc; }
+.how-it-works li:nth-child(4)::before { content: "⏳ "; color: #2e7d32; }
+
+/* 🎁 Feature Section Flexbox */
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Feature Box Styling */
+.feature-box {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease-in-out;
+  font-size: 1.1rem;
+}
+
+/* Hover Effect for Feature Boxes */
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 🎉 Section Icons */
+.about-box::before { content: "📖 "; }
+.how-it-works-box::before { content: "🛠️ "; }
+.features-box::before { content: "🎁 "; }
+.recent-box::before { content: "🕰️ "; }
+
+/* Highlight Some Text */
+h2 {
+  font-family: 'Fredoka One', cursive;
+  color: #ff4081;
+  font-size: 2rem;
+}
+
+strong {
+  color: #ff6b81;
+}
+
+
+/* 🩷 Centering the Form */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 50%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* 💖 Input Fields */
+  input, textarea {
+    width: 90%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: 2px solid #ff4081;
+    font-size: 1rem;
+    outline: none;
+    background: #fff5f8;
+  }
+  
+  /* ✨ Input Fields Focus Effect */
+  input:focus, textarea:focus {
+    border-color: #ff8c00;
+    box-shadow: 0 0 10px rgba(255, 140, 0, 0.4);
+  }
+  
+  /* 🎀 Button Styling */
+  button {
+    background: #ff4081;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+  }
+  
+  /* 💫 Button Hover Effect */
+  button:hover {
+    background: #ff8c00;
+    transform: scale(1.05);
+  }
+  
+  /* 🌟 Title Style */
+  h1 {
+    font-size: 3rem;
+    font-family: 'Fredoka One', cursive;
+    color: #ff4081;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+
+
+
+  .file-input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .remove-btn {
+    margin-left: 10px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .add-media-btn {
+    background: #ff66b2;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .create-btn {
+    background: #ff4081;
+    color: white;
+    border: none;
+    padding: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+
+  .add-media-btn, .create-capsule-btn {
+    border-radius: 10px; /* Match with input box */
+}
+
+
+
+.profile-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-info {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.loading {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.capsule-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.capsule-card {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.capsule-card:hover {
+  transform: scale(1.05);
+}
+
+button {
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ff3366;
+}
