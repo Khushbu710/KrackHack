@@ -1,3 +1,8 @@
+We have added the files in master instead of main by mistake. Please consider. And while i was checking now, i realised i accidentally might have added some wrong files so the code might not be fully functional. 
+Please use this git repo for the correct ones and if you don't want to use this new one, you may go ahead with this orignal one too, it's better than not checking any repo. 
+We have already taken the permission of our gdg mentor.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
